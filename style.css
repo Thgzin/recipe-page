@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Young+Serif&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+:root {
+  --clr-Nutmeg: #854632;
+  --clr-Dark-Raspberry: #7b284f;
+
+  --clr-White: #ffffff;
+  --clr-Rose-White: #fff5fa;
+  --clr-Eggshell: #f3e6d8;
+  --clr-Light-Grey: #e4ded8;
+  --clr-Wenge-Brown: #5f574e;
+  --clr-Dark-Charcoal: #302d2c;
+
+  --ff-main: "Outfit", sans-serif;
+  --ff-headings: "Young Serif", serif;
+  --fs-main: 1rem;
+  --fs-headings: 1.75rem;
+  --fw-400: 400;
+  --fw-600: 600;
+  --fw-700: 700;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--clr-Eggshell);
+  font-family: "Outfit", serif;
+  /*font-family: "Young Serif", serif*/
+}
+
+.container {
+  display: grid;
+  place-items: center;
+}
+
+.box {
+  background-color: var(--clr-White);
+  padding: 1.75rem;
+  margin: 6rem 0;
+  max-width: 50rem;
+}
+
+img {
+  max-width: 100%;
+  border-radius: 2rem;
+}
+
+.texto-principal-omelette {
+  font-size: 3rem;
+  margin-top: 0.5em;
+}
+
+.texto-secundario-omelette {
+  margin-top: 1.5rem;
+}
+
+.preparation-section {
+  margin-top: 3rem;
+  margin-left: 3rem;
+}
+
+.preparation-text {
+  font-size: 1.5rem;
+  color: var(--clr-Dark-Raspberry);
+}
+
+ul {
+  margin-top: 0.5rem;
+  margin-left: 2rem;
+}
+
+li {
+  margin-top: 2rem;
+  color: black;
+}
+
+b {
+  margin-left: 13px;
+}
+
+.ingredients-section {
+  margin-top: 5rem;
+  margin-left: 1rem;
+}
+
+.ingredients-text {
+  font-family: "Young Serif", serif;
+  font-weight: 500;
+  color: var(--clr-Nutmeg);
+  font-size: 2.5rem;
+}
+
+.ingredients-list {
+  margin-top: 2rem;
+  margin-left: 15px;
+}
+
+.ingredients-list-text {
+  margin-left: 1.5rem;
+  font-size: 1.2rem;
+}
+
+.instruction-section {
+  margin-top: 3rem;
+  margin-left: 1rem;
+}
+
+.instruction-text {
+  font-family: "Young Serif", serif;
+  font-weight: 500;
+  color: var(--clr-Nutmeg);
+  font-size: 2.5rem;
+}
+
+.instruction-list {
+  list-style: decimal-leading;
+  color: var(--clr-Nutmeg);
+  font-size: 20px;
+}
+
+.instruction-list b {
+  color: black;
+}
+
+.bar {
+  margin-top: 2rem;
+  border: 1px solid var(--clr-Light-Grey);
+  border-bottom: var(--clr-Light-Grey);
+}
+
+.nutrition-section {
+  margin-top: 2rem;
+  margin-left: 1rem;
+}
+
+.nutrition-text {
+  font-family: "Young Serif", serif;
+  font-weight: 500;
+  color: var(--clr-Nutmeg);
+  font-size: 2.5rem;
+}
+
+.nutrition-text-2 {
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+.nutrition-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nutrition-list-text {
+  color: var(--clr-Nutmeg);
+}
+
+@media screen and (max-width: 650px) {
+  .box {
+    height: 100%;
+    text-align: center;
+  }
+  ul{
+    margin: 1px;
+  }
+  .nutrition-list{
+   gap: .5rem;
+  }
+}
